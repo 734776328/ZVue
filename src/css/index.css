@@ -1,0 +1,30 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;  }
+address,cite,dfn,em,var, i {font-style:normal;}
+body {font-size: 16px; line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: #222; background: #eee; }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
+button,input,select,textarea{font-size:100%;}
+fieldset,img{border:0;}
+a { text-decoration: none; color: #666; background: none }
+ul, ol { list-style: none; }
+:focus{ outline:none;}
+.z-row,.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear{clear: both;}
+.left{ float: left; }
+.right{float: right;}
+/* ------------------------------------------- */
+.flex {
+  display: flex;
+}
+.z-row {
+  width: 100%;
+}
+.z-col-1 {width: 4.16667%;} .z-col-2 {width: 8.33333%;}.z-col-3 {width: 12.5%;}.z-col-4 {width: 16.66667%;}.z-col-5 {width:20.83333%;}.z-col-6 {width:25%;}
+.z-col-7 {width: 29.16667%;}.z-col-8 {width: 33.33333%;}.z-col-9 {width: 37.5%;}.z-col-10 {width: 41.66667%;}.z-col-11 {width: 45.83333%;}.z-col-12 {width: 50%;}
+.z-col-13 {width: 54.16667%;}.z-col-14 {width: 58.33333%;}.z-col-15 {width: 62.5%;}.z-col-16 {width: 66.66667%;}.z-col-17 {width: 70.83333%;}.z-col-18 {width: 75%;}
+.z-col-19 {width: 79.16667%;}.z-col-20 {width: 83.33333%;;}.z-col-21 {width: 87.5%;}.z-col-22 {width: 91.66667%;}.z-col-23 {width: 95.83333%;}.z-col-24 {width: 100%;}
+[class*=z-col-] {
+  float: left;
+}
