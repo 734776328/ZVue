@@ -26,7 +26,7 @@ export default {
           'flex': this.type === 'flex'
         }
       ],
-      style: this.style,
+      // style: this.style,
     }, this.$slots.default)
   }
 }

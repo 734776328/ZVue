@@ -1,8 +1,10 @@
 import ZRow from '../packages/row'
 import ZCol from '../packages/col'
+import ZInput from '../packages/input'
 const components = [
   ZRow,
-  ZCol
+  ZCol,
+  ZInput
 ]
 
 const install = function (Vue) {
@@ -19,5 +21,6 @@ export default {
   version: '1.0.0',
   install,
   ZRow,
-  ZCol
+  ZCol,
+  ZInput
 }
