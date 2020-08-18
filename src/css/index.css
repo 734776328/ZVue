@@ -38,6 +38,10 @@ ul, ol { list-style: none; }
 .z-input {
   position: relative;
 }
+.z-input-transparent {
+  outline: 1px solid transparent;
+  border: none !important;
+}
 .z-input-i {
   position: absolute;
   right: 5px;
@@ -54,4 +58,113 @@ ul, ol { list-style: none; }
 .z-input-text:focus, .z-textarea:focus {
   border-color: #409eff;
   outline: none;
+}
+.z-table {
+  border-spacing: 0;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.z-table td {
+  box-sizing: border-box;
+}
+.z-table >tr:first-child {
+  /* display: table; */
+  /* word-spacing:-1em; */
+}
+.z-table > tr:first-child th{
+  width: 50px;
+  height: 26px;
+  background-color: #F3F3F3;
+  border-left: 1px #ccc solid;
+  border-top: 1px #ccc solid;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+.z-table > tr td{
+  width: 50px;
+  height: 26px;
+  border-left: 1px #ccc solid;
+  border-top: 1px #ccc solid;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+.z-table > tr td input{
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+.z-table > tr td input:focus {
+  width: 105%;
+  height: 110%;
+  margin-left: -1px;
+  text-align: left;
+}
+.z-button {
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  font-weight: 500;
+  user-select: none;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+.z-button-normal {
+  border-radius: 4px;
+}
+.z-button-round {
+  border-radius: 20px;
+}
+.z-button-circle {
+  border-radius: 50%;
+  padding: 10px;
+}
+.z-button-disabled {
+  cursor: not-allowed;
+  -webkit-filter: grayscale(100%); /* webkit */
+  -moz-filter: grayscale(100%); /*firefox*/
+  -ms-filter: grayscale(100%); /*ie9*/
+  -o-filter: grayscale(100%); /*opera*/
+  filter: grayscale(100%);
+  filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); 
+  filter:gray; /*ie9- */
+}
+.z-button-not-disabled:active {
+  border: 1px solid rgb(58, 142, 230);
+  color: rgb(58, 156, 236);
+}
+.z-upload-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  transition: 1s;
+}
+.z-upload > div{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.z-upload > div:hover {
+  border-color: rgb(64, 158, 255);
+  color: rgb(64, 158, 255);
+}
+.z-upload span {
+  color: red;
+  font-size: 14px;
 }

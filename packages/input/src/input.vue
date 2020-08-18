@@ -3,7 +3,9 @@
     <template v-if="type === 'textarea'">
       <textarea
         type="textarea"
-        :class="['z-textarea']"
+        :class="['z-textarea', {
+          'z-input-transparent': isTransparent 
+        }]"
         :rows="rows"
         :style="'width:' + (width == 'full'? '100%;' : (typeof width === 'number'? width + 'px;' : width + '%;')) 
           + 'resize:' + resize"
@@ -19,7 +21,9 @@
     <template v-else>
       <input
         type="text"
-        :class="['z-input-text']"
+        :class="['z-input-text', {
+          'z-input-transparent': isTransparent 
+        }]"
         :value="value"
         :style="'width:' + (width == 'full'? '100%;' : (typeof width === 'number'? width + 'px;' : width + '%;'))"
         :disabled="disabled"
@@ -61,7 +65,11 @@ export default {
     },
     disabled: {
       type: Boolean,
-      default: true
+      default: false
+    },
+    isTransparent: {
+      type: Boolean,
+      default: false
     }
   },
   data () {

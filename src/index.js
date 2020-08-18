@@ -1,10 +1,16 @@
 import ZRow from '../packages/row'
 import ZCol from '../packages/col'
 import ZInput from '../packages/input'
+import ZExcel from '../packages/excel'
+import ZUpload from '../packages/upload'
+import ZButton from '../packages/button'
 const components = [
   ZRow,
   ZCol,
-  ZInput
+  ZInput,
+  ZExcel,
+  ZUpload,
+  ZButton
 ]
 
 const install = function (Vue) {

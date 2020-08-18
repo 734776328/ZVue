@@ -44,6 +44,44 @@
         {{inputContent}}
       </z-row>
     </div>
+
+    <div>
+      <z-excel></z-excel>
+    </div>
+
+    <z-row>
+      <z-col :span="5">
+        <z-button @click="click('123')">默认按钮</z-button>
+      </z-col>
+      <z-col :span="5">
+        <z-button :backgroundColor="'#4DA5FE'" type="round">默认按钮</z-button>
+      </z-col>
+      <z-col :span="5">
+        <z-button backgroundColor="#D2A290" type="circle">是</z-button>
+      </z-col>
+    </z-row>
+    <z-row>
+      <z-col :span="5">
+        <z-button @click="click('123')" :disabled="true">默认按钮</z-button>
+      </z-col>
+      <z-col :span="5">
+        <z-button :backgroundColor="'#4DA5FE'" type="round" :disabled="true">默认按钮</z-button>
+      </z-col>
+      <z-col :span="5">
+        <z-button backgroundColor="#D2A290" type="circle" :disabled="true">是</z-button>
+      </z-col>
+    </z-row>
+
+    <z-row>
+      <z-col>
+        <z-upload v-model="imgUrl" maxSize="1024" :fileType="['aaa','123','12312']">
+          <template v-slot:maxTips>
+            这是自定义的文件过大提示！
+          </template>
+        </z-upload>
+        <img v-show="imgUrl" :src="imgUrl" style="width:300px;">
+      </z-col>
+    </z-row>
   </div>
 </template>
   
@@ -52,7 +90,8 @@ export default {
   data () {
     return {
       editContent: 1,
-      inputContent: 1
+      inputContent: 1,
+      imgUrl: ''
     }
   },
   methods: {
